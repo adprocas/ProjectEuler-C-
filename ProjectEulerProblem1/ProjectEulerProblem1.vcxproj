@@ -23,7 +23,6 @@
     <ProjectGuid>{B0EC198A-737D-434A-BDD8-6971A849B969}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>ProjectEulerProblem1</RootNamespace>
-    <WindowsTargetPlatformVersion>7</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
