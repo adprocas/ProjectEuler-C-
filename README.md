@@ -1,4 +1,5 @@
-# ProjectEuler-C-
+# ProjectEuler with C++
+
 Solutions to project Euler problems using C++
 
 For this project I am using VS2017 Community.
