@@ -22,5 +22,7 @@ int main() {
 		}
 	}
 
-	cout << sum << endl;
+	cout << "Project Euler Problem 1 Answer:" << endl;
+
+	cout << sum << endl << endl;
 }
