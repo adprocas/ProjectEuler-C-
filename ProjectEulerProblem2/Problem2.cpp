@@ -2,8 +2,6 @@
 
 using namespace std;
 
-
-
 int main() {
 	int max = 4000000;
 	int prev = 1;

@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProjectEulerProblem1", "Pro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProjectEulerProblem2", "ProjectEulerProblem2\ProjectEulerProblem2.vcxproj", "{3ADA0AD5-F80C-4A31-B166-B52F2BE536EA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProjectEulerProblem3", "ProjectEulerProblem3\ProjectEulerProblem3.vcxproj", "{19E0A3AF-5051-45C4-9A54-7180549D065D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{3ADA0AD5-F80C-4A31-B166-B52F2BE536EA}.Release|x64.Build.0 = Release|x64
 		{3ADA0AD5-F80C-4A31-B166-B52F2BE536EA}.Release|x86.ActiveCfg = Release|Win32
 		{3ADA0AD5-F80C-4A31-B166-B52F2BE536EA}.Release|x86.Build.0 = Release|Win32
+		{19E0A3AF-5051-45C4-9A54-7180549D065D}.Debug|x64.ActiveCfg = Debug|x64
+		{19E0A3AF-5051-45C4-9A54-7180549D065D}.Debug|x64.Build.0 = Debug|x64
+		{19E0A3AF-5051-45C4-9A54-7180549D065D}.Debug|x86.ActiveCfg = Debug|Win32
+		{19E0A3AF-5051-45C4-9A54-7180549D065D}.Debug|x86.Build.0 = Debug|Win32
+		{19E0A3AF-5051-45C4-9A54-7180549D065D}.Release|x64.ActiveCfg = Release|x64
+		{19E0A3AF-5051-45C4-9A54-7180549D065D}.Release|x64.Build.0 = Release|x64
+		{19E0A3AF-5051-45C4-9A54-7180549D065D}.Release|x86.ActiveCfg = Release|Win32
+		{19E0A3AF-5051-45C4-9A54-7180549D065D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
