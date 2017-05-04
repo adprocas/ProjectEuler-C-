@@ -3,7 +3,6 @@
 using namespace std;
 
 bool isPalindrome(int number);
-long long getFactorUpperLimit(long long number);
 int reverseNumber(int number);
 
 int main() {
@@ -25,16 +24,6 @@ int main() {
 
 bool isPalindrome(int number) {
 	return number == reverseNumber(number);
-}
-
-long long getFactorUpperLimit(long long number) {
-	auto limit = (long long)sqrt(number);
-
-	if (limit % 2L == 0L) {
-		--limit;
-	}
-
-	return limit;
 }
 
 int reverseNumber(int number) {
