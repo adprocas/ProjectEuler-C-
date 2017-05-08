@@ -8,4 +8,7 @@ public:
 
 	static bool isPalindrome(int number);
 	static int reverseNumber(int number);
+
+	static long long doFactorial(long long number);
+	static bool hasAllFactorsToLimit(long long number, long long limit);
 };

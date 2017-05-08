@@ -62,3 +62,23 @@ int Utils::reverseNumber(int number) {
 
 	return reverse;
 }
+
+long long Utils::doFactorial(long long number) {
+	if (number > 1) {
+		long long prev = number * doFactorial(number - 1L);
+		return prev;
+	}
+
+	return number;
+}
+
+bool Utils::hasAllFactorsToLimit(long long number, long long limit)
+{
+	for (long x = 1L; x <= limit; x++) {
+		if (number % x != 0L) {
+			return false;
+		}
+	}
+
+	return true;
+}
