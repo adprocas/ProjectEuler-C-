@@ -82,3 +82,24 @@ bool Utils::hasAllFactorsToLimit(long long number, long long limit)
 
 	return true;
 }
+
+
+long long Utils::computeSumOfSquares(long long limit) {
+	long long  sumOfSquares = 0LL;
+
+	for (long long x = 0LL; x <= limit; x++) {
+		sumOfSquares += x * x;
+	}
+
+	return sumOfSquares;
+}
+
+long long Utils::computeSquareOfSums(long long limit) {
+	long long squareOfSums = 0LL;
+
+	for (long long x = 0LL; x <= limit; x++) {
+		squareOfSums += x;
+	}
+
+	return squareOfSums * squareOfSums;
+}
