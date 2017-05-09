@@ -3,6 +3,7 @@
 class Utils {
 public:
 	static long long getLargestPrimeFactor(long long number);
+	static long long findNthPrimeNumber(long long n);
 	static long long getFactorUpperLimit(long long number);
 	static bool isPrime(long long number);
 

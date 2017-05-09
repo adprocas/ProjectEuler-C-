@@ -47,6 +47,23 @@ long long Utils::getLargestPrimeFactor(long long number) {
 	return -1;
 }
 
+long long Utils::findNthPrimeNumber(long long n) {
+	int foundPrimes = 0;
+	long foundPrime = 0L;
+	long x = 0L;
+
+	while (foundPrimes <= n) {
+		++x;
+
+		if (isPrime(x)) {
+			++foundPrimes;
+			foundPrime = x;
+		}
+	}
+
+	return foundPrime;
+}
+
 bool Utils::isPalindrome(int number) {
 	return number == reverseNumber(number);
 }
