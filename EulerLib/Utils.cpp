@@ -121,10 +121,10 @@ long long Utils::computeSquareOfSums(long long limit) {
 	return squareOfSums * squareOfSums;
 }
 
-long long Utils::getLargestProductInSeries(long long numbers[], int seriesLimit) {
+long long Utils::getLargestProductInSeries(long long numbers[], int arraySize, int seriesLimit) {
 	long long largestMultiple = 0L;
 
-	for (int x = 0; x < (sizeof(numbers) / sizeof(*numbers)) - seriesLimit; x++) {
+	for (int x = 0; x < arraySize - seriesLimit; x++) {
 		long long checkMultiple = 1L;
 
 		for (int y = 0; y < seriesLimit; y++) {

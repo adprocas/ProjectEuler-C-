@@ -4,16 +4,21 @@
 
 using namespace std;
 
-long long* parseNumbers(string nums);
+const int arraySize = 1000;
+
+void parseNumbers(string nums, long long numbers[]);
 string getBigNumber();
 
 int main() {
 	string bigNumber = getBigNumber();
 
-	long long *numbers = parseNumbers(bigNumber);
-	long long largestMultiple = Utils::getLargestProductInSeries(numbers, 13);
+	long long numbers[arraySize];
 
-	cout << "Project Euler Problem 7 Answer:" << endl;
+	parseNumbers(bigNumber, numbers);
+
+	long long largestMultiple = Utils::getLargestProductInSeries(numbers, arraySize, 13);
+
+	cout << "Project Euler Problem 8 Answer:" << endl;
 
 	cout << largestMultiple << endl;
 }
@@ -43,12 +48,9 @@ string getBigNumber() {
 	return bigNumber;
 }
 
-long long* parseNumbers(string nums) {
-	long long numbers[nums.size];
-
+void parseNumbers(string nums, long long numbers[]) {
+	
 	for (int i = 0; i < nums.length(); i++) {
 		numbers[i] = nums.at(i) - '0';
 	}
-
-	return numbers;
 }

@@ -141,6 +141,11 @@
   <ItemGroup>
     <ClCompile Include="Problem8.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EulerLib\EulerLib.vcxproj">
+      <Project>{c42503bf-a91e-4b34-9ff7-bb4e1636c741}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
