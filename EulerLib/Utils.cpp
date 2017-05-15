@@ -150,7 +150,7 @@ int Utils::countFactors(long long number) {
 	* I think you should only have to go up to the square
 	*
 	* reason:
-	* To find factors of 25, for example 1 and 25 5 and 25
+	* To find factors of 25, for example 1, 25, and 5
 	*
 	* no need to check anything over 5 (5 is sqrt(25)), because we know
 	* there are two for every possible combination below, which will cover
