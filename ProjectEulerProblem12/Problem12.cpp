@@ -7,10 +7,15 @@ int main() {
 	long long i = 2LL;
 	long long triangleNumber = 1LL;
 	long long factorsToFind = 500LL;
-	//Number of factors can be expressed as a maximum of the sqrt of the
-	//number in question, multiplied by 2
-	//Therefore, we don't need to check anything below the square of the
-	//number of divisors we are looking for
+	/**
+	 * The absolute maximum number of factors a number can have can be expressed by
+	 * the sqrt of the number in question, multiplied by 2
+	 * Therefore, we don't need to check anything below the square of the
+	 * number of divisors we are looking for
+	 * This number is still very low, as it would be impossible for a number to have all
+	 * numbers under its sqrt to be divisors (other than 4, which would have 4, 2, and 1
+	 * as divisors, with 2 and 1 being the two numbers under its sqrt, and both are divisors)
+	 */
 	long long limit = pow(factorsToFind, 2);
 
 	while (true) {
