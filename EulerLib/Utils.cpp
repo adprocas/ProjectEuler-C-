@@ -138,3 +138,46 @@ long long Utils::getLargestProductInSeries(long long numbers[], int arraySize, i
 
 	return largestMultiple;
 }
+
+int Utils::countFactors(long long number) {
+	int numberOfFactors = 0;
+	long long upperLimit = (long long)ceil(sqrt(number));
+
+	if (number % upperLimit == 0) {
+		numberOfFactors = 1;
+	}
+	/**
+	* I think you should only have to go up to the square
+	*
+	* reason:
+	* To find factors of 25, for example 1 and 25 5 and 25
+	*
+	* no need to check anything over 5 (5 is sqrt(25)), because we know
+	* there are two for every possible combination below, which will cover
+	* all of the options above
+	*
+	* for example, 81
+	*
+	* 1 - 81, 3 - 27, 9 - 9
+	*
+	* so, do the sqrt, find if it is a factor. If so, add 1 to total
+	* factors and continue. If not, find the ceil and work up until that
+	* number. All factors below the sqrt will have two factors, so add an
+	* extra for each found up until sqrt
+	*/
+	for (int x = 1; x <= upperLimit; ++x) {
+		if (number % 2 != 0 && x % 2 == 0) {
+			++x;
+
+			if (x > number) {
+				break;
+			}
+		}
+
+		if (number % x == 0) {
+			numberOfFactors += 2;
+		}
+	}
+
+	return numberOfFactors;
+}

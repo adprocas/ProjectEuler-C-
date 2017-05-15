@@ -17,4 +17,6 @@ public:
 	static long long computeSquareOfSums(long long limit);
 
 	static long long getLargestProductInSeries(long long numbers[], int arraySize, int seriesLimit);
+
+	static int countFactors(long long number);
 };
