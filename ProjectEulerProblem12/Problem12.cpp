@@ -18,7 +18,7 @@ int main() {
 		* no need to test anything that isn't divisible by 2 or 3. I don't
 		* know if it is certain, but it's very unlikely that the number
 		* will not be divisible by 2 and 3. Being divisible by 2 increases
-		* the potential number of factors (all even numbers) the same can
+		* the potential number of factors (all even numbers). The same can
 		* be said for 3 (every third number)
 		*/
 		if (triangleNumber >= limit && triangleNumber % 2 == 0 && triangleNumber % 3 == 0) {
