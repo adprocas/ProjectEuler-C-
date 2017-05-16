@@ -181,3 +181,9 @@ int Utils::countFactors(long long number) {
 
 	return numberOfFactors;
 }
+
+void Utils::parseNumbers(std::string nums, long long numbers[]) {
+	for (int i = 0; i < nums.length(); i++) {
+		numbers[i] = nums.at(i) - '0';
+	}
+}

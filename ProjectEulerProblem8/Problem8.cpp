@@ -6,7 +6,6 @@ using namespace std;
 
 const int arraySize = 1000;
 
-void parseNumbers(string nums, long long numbers[]);
 string getBigNumber();
 
 int main() {
@@ -14,7 +13,7 @@ int main() {
 
 	long long numbers[arraySize];
 
-	parseNumbers(bigNumber, numbers);
+	Utils::parseNumbers(bigNumber, numbers);
 
 	long long largestMultiple = Utils::getLargestProductInSeries(numbers, arraySize, 13);
 
@@ -46,11 +45,4 @@ string getBigNumber() {
 	bigNumber.append("71636269561882670428252483600823257530420752963450");
 
 	return bigNumber;
-}
-
-void parseNumbers(string nums, long long numbers[]) {
-	
-	for (int i = 0; i < nums.length(); i++) {
-		numbers[i] = nums.at(i) - '0';
-	}
 }

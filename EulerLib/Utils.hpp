@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 
 class Utils {
 public:
@@ -19,4 +20,6 @@ public:
 	static long long getLargestProductInSeries(long long numbers[], int arraySize, int seriesLimit);
 
 	static int countFactors(long long number);
+
+	static void parseNumbers(std::string nums, long long numbers[]);
 };
