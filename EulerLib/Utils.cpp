@@ -187,3 +187,19 @@ void Utils::parseNumbers(std::string nums, long long numbers[]) {
 		numbers[i] = nums.at(i) - '0';
 	}
 }
+
+void Utils::parseNumbers(std::string nums, int numbers[]) {
+	for (int i = 0; i < nums.length(); i++) {
+		numbers[i] = nums.at(i) - '0';
+	}
+}
+
+std::vector<int> Utils::parseNumbers(std::string nums) {
+	std::vector<int> vector;
+
+	for (int i = 0; i < nums.length(); i++) {
+		vector.push_back(nums.at(i) - '0');
+	}
+
+	return vector;
+}

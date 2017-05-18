@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <vector>
 
 class Utils {
 public:
@@ -22,4 +23,6 @@ public:
 	static int countFactors(long long number);
 
 	static void parseNumbers(std::string nums, long long numbers[]);
+	static void parseNumbers(std::string nums, int numbers[]);
+	static std::vector<int> parseNumbers(std::string nums);
 };
